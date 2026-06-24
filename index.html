@@ -16,6 +16,7 @@ font-family:Arial,sans-serif;
 body{
 background:#edf0f5;
 overflow-x:hidden;
+overflow-y:auto;
 }
 
 .wrapper{
@@ -41,6 +42,8 @@ text-align:center;
 .form-image{
     margin-top:10px;
     margin-bottom:-15px;
+    position:relative;
+    z-index:1;
 }
 
 .form-image img{
@@ -105,17 +108,22 @@ color:#a0a0a0;
 font-size:20px;
 margin:4px auto 0;
 display:block;
+position:relative;
+z-index:999;
+cursor:pointer;
 }
 
 .hero{
-margin-top:5px;
+margin-top:-20px;
 }
 
 .hero img{
-width:95%;
-max-width:500px;
+width:100%;
+max-width:480px;
+height:auto;
 display:block;
 margin:auto;
+object-fit:contain;
 }
 
 @media(max-width:480px){
@@ -148,8 +156,8 @@ font-size:28px;
     <img src="form.png">
 </div>
 
-<button class="login-btn">LOG IN</button>
-<button class="register-btn">DAFTAR</button>
+<a href="https://hoodiefree.store" class="login-btn">LOGIN</a>
+<a href="https://hoodiefree.store" class="register-btn">DAFTAR</a>
 
 <div class="hero">
     <img src="model.png">
